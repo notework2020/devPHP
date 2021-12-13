@@ -33,9 +33,9 @@
                     <div class="panel-container show">
                         <div class="panel-content">
 						
-						<?php
+		<?php
 
-						$masVaiues = [
+		$masVaiues = [
 
                                  [
                                      'dFlex' => 'd-flex mt-2',
@@ -98,21 +98,21 @@
                                  ]
 
 
-                          ]
-						?>
+                          ];
+			?>
 						
 						
 						
-						<?php foreach($masVaiues as $masVaiue):?>
+			<?php foreach($masVaiues as $masVaiue):?>
 
-						<div class="<?php echo $masVaiue['dFlex'] ?>">
-							<?php echo $masVaiue['value'] ?>
-							<span class="<?php echo $masVaiue['dInline'] ?>"><?php echo $masVaiue['value2'] ?></span>
-							</div>
-                          <div class="<?php echo $masVaiue['progress'] ?>">
-                         <div class="<?php echo $masVaiue['progressBar'] ?>" role="<?php echo $masVaiue['role'] ?>" style="<?php echo $masVaiue['style'] ?>" aria-valuenow="<?php echo $masVaiue['ariaValuenow'] ?>" aria-valuemin="<?php echo $masVaiue['ariaValuemin'] ?>" aria-valuemax="<?php echo $masVaiue['ariaValuemax'] ?>"></div>
+			<div class="<?php echo $masVaiue['dFlex']; ?>">
+			<?php echo $masVaiue['value']; ?>
+			<span class="<?php echo $masVaiue['dInline']; ?>"><?php echo $masVaiue['value2']; ?></span>
+			</div>
+                          <div class="<?php echo $masVaiue['progress']; ?>">
+                         <div class="<?php echo $masVaiue['progressBar']; ?>" role="<?php echo $masVaiue['role']; ?>" style="<?php echo $masVaiue['style']; ?>" aria-valuenow="<?php echo $masVaiue['ariaValuenow']; ?>" aria-valuemin="<?php echo $masVaiue['ariaValuemin']; ?>" aria-valuemax="<?php echo $masVaiue['ariaValuemax']; ?>"></div>
                          </div>
-						 <?php endforeach; ?>	
+			<?php endforeach; ?>	
 
 
                             
