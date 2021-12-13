@@ -73,7 +73,7 @@ $workers = [
 	'twitName' => '@lodev09',
 	'wrapbootstrap' => 'https://wrapbootstrap.com/user/lodev09',
 	'title' => 'Contact Jovanni',
-	'ban' => false
+	'ban' => true
 	
 ],
 
