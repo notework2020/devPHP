@@ -59,16 +59,16 @@
                         	?>
 
 
-								<div class="panel-container show">
-                     			   <div class="panel-content">
+					<div class="panel-container show">
+                     			<div class="panel-content">
 
-                                 <ol class="breadcrumb page-breadcrumb">
+                                        <ol class="breadcrumb page-breadcrumb">
 
                                  	<?php foreach($links as $link): ?>
                                  	<?php if($link['is_link']): ?>
-                                 	    <li class="breadcrumb-item"><a href="<?php echo $link['href'];?>"><?php echo $link['title'];?></a></li>
-                                 	    <?php else: ?>
-                                 	      <li class="breadcrumb-item active"><?php echo $link['title'];?></li>     
+                                 	<li class="breadcrumb-item"><a href="<?php echo $link['href'];?>"><?php echo $link['title'];?></a></li>
+                                 	 <?php else: ?>
+                                 	 <li class="breadcrumb-item active"><?php echo $link['title'];?></li>     
                                  	<?php endif;?>
                                  	<?php endforeach;?>
 

@@ -39,8 +39,8 @@
 $workers = [
 
 [
-    'photo' => 'img/demo/authors/sunny.png',
-    'name' => 'Sunny A.',
+        'photo' => 'img/demo/authors/sunny.png',
+        'name' => 'Sunny A.',
 	'nameSpec' => 'Sunny A. (UI/UX Expert)',
 	'prof' => 'Lead Author',
 	'twitter' => 'https://twitter.com/@myplaneticket',
@@ -51,8 +51,8 @@ $workers = [
 ],
 
 [
-    'photo' => 'img/demo/authors/josh.png',
-    'name' => 'Jos K.',
+        'photo' => 'img/demo/authors/josh.png',
+        'name' => 'Jos K.',
 	'nameSpec' => 'Jos K. (ASP.NET Developer)',
 	'prof' => 'Partner &amp; Contributor',
 	'twitter' => 'https://twitter.com/@atlantez',
@@ -63,8 +63,8 @@ $workers = [
 ],
 
 [
-    'photo' => 'img/demo/authors/jovanni.png',
-    'name' => 'Jovanni Lo',
+        'photo' => 'img/demo/authors/jovanni.png',
+        'name' => 'Jovanni Lo',
 	'nameSpec' => 'Jovanni L. (PHP Developer)',
 	'prof' => 'Partner &amp; Contributor',
 	'twitter' => 'https://twitter.com/@lodev09',
@@ -75,8 +75,8 @@ $workers = [
 ],
 
 [
-    'photo' => 'img/demo/authors/roberto.png',
-    'name' => 'Jovanni Lo',
+        'photo' => 'img/demo/authors/roberto.png',
+        'name' => 'Jovanni Lo',
 	'nameSpec' => 'Roberto R. (Rails Developer)',
 	'prof' => 'Partner &amp; Contributor',
 	'twitter' => 'https://twitter.com/@sildur',
@@ -92,38 +92,22 @@ $workers = [
 
 ?>
 						   
-						   
-						   
-						   
-						   
-						   
-						   <?php foreach($workers as $worker):?>
-						   <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-
-                            <img src="<?php echo $worker['photo'] ?>" alt="<?php echo $worker['name'] ?>" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                              
-
-
-							  <div class="ml-2 mr-3">
-                                    <h5 class="m-0">
+		  <?php foreach($workers as $worker):?>
+		 <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
+                  <img src="<?php echo $worker['photo'] ?>" alt="<?php echo $worker['name'] ?>" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">                          
+		  <div class="ml-2 mr-3">
+                  <h5 class="m-0">
 									
-                                        <?php echo $worker['nameSpec'] ?>
-                                        <small class="m-0 fw-300">
-                                            <?php echo $worker['prof'] ?>
-                                        </small>
-                                    </h5>
-                                    <a href="<?php echo $worker['twitter'] ?>" class="text-info fs-sm" target="_blank"><?php echo $worker['twitName'] ?></a> -
-                                    <a href="<?php echo $worker['wrapbootstrap'] ?>" class="text-info fs-sm" target="_blank" title="<?php echo $worker['title'] ?>"><i class="fal fa-envelope"></i></a>
+                   <?php echo $worker['nameSpec'] ?>
+                    <small class="m-0 fw-300">
+                     <?php echo $worker['prof'] ?>
+                       </small>
+                        </h5>
+                        <a href="<?php echo $worker['twitter'] ?>" class="text-info fs-sm" target="_blank"><?php echo $worker['twitName'] ?></a> -
+                         <a href="<?php echo $worker['wrapbootstrap'] ?>" class="text-info fs-sm" target="_blank" title="<?php echo $worker['title'] ?>"><i class="fal fa-envelope"></i></a>
                                 </div>
                             </div>
-							<?php endforeach; ?>
-							
-							
-							
-                            
-							
-							
-							
+			<?php endforeach; ?>
 							
                         </div>
                         </div>

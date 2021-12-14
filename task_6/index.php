@@ -73,7 +73,7 @@ $workers = [
 	'twitName' => '@lodev09',
 	'wrapbootstrap' => 'https://wrapbootstrap.com/user/lodev09',
 	'title' => 'Contact Jovanni',
-	'ban' => false
+	'ban' => true
 	
 ],
 
@@ -95,28 +95,17 @@ $workers = [
 ];
 
 ?>
-						   
-						   
-						   
-						   
-						   
-						   
-						   <?php foreach($workers as $worker):?>
-							<?php if($worker['ban']): ?>
- 							<div title="Заблокирован" class="banned rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">								
-                        	 <?php else: ?>
-						   <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-                        	 <?php endif;?>
-
-
-                            <img src="<?php echo $worker['photo'] ?>" alt="<?php echo $worker['name'] ?>" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
-                              
-
-
-							  <div class="ml-2 mr-3">
+						  
+			 <?php foreach($workers as $worker):?>
+			<?php if($worker['ban']): ?>
+ 			<div title="Заблокирован" class="banned rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">								
+                        <?php else: ?>
+			 <div class="rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
+                         <?php endif;?>
+                         <img src="<?php echo $worker['photo'] ?>" alt="<?php echo $worker['name'] ?>" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
+                                <div class="ml-2 mr-3">
                                     <h5 class="m-0">
-									
-                                        <?php echo $worker['nameSpec'] ?>
+					 <?php echo $worker['nameSpec'] ?>
                                         <small class="m-0 fw-300">
                                             <?php echo $worker['prof'] ?>
                                         </small>
@@ -128,14 +117,13 @@ $workers = [
 
                                     <?php else: ?>
 
-
                                     <a href="<?php echo $worker['twitter'] ?>" class="text-info fs-sm" target="_blank"><?php echo $worker['twitName'] ?></a> -
                                     <a href="<?php echo $worker['wrapbootstrap'] ?>" class="text-info fs-sm" target="_blank" title="<?php echo $worker['title'] ?>"><i class="fal fa-envelope"></i></a>
                                     <?php endif;?>
 
                                 </div>
                             </div>
-							<?php endforeach; ?>
+			<?php endforeach; ?>
 							
 							
 							
