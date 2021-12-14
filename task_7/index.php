@@ -107,8 +107,6 @@ $workers =
 						   $statement -> execute();
 						   $workers = $statement -> fetchAll(PDO::FETCH_ASSOC);
 
-
-
 						   ?>
 						   
 						   
