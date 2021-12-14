@@ -109,21 +109,14 @@ $workers =
 
 						   ?>
 						   
-						   
-						   
-						   
 						   <?php foreach($workers as $worker):?>
 						 <div class="<?php echo $worker['status'] == 'locked' ? 'banned' : '' ?> rounded-pill bg-white shadow-sm p-2 border-faded mr-3 d-flex flex-row align-items-center justify-content-center flex-shrink-0">
-
-                            <img src="<?php echo $worker['photo'] ?>" alt="<?php echo $worker['name'] ?>" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
+                                                  <img src="<?php echo $worker['photo'] ?>" alt="<?php echo $worker['name'] ?>" class="img-thumbnail img-responsive rounded-circle" style="width:5rem; height: 5rem;">
                               
-
-
-							  <div class="ml-2 mr-3">
-                                    <h5 class="m-0">
-									
-                                        <?php echo $worker['nameSpec'] ?>
-                                        <small class="m-0 fw-300">
+                                                 <div class="ml-2 mr-3">
+                                                 <h5 class="m-0">	
+                                               <?php echo $worker['nameSpec'] ?>
+                                             <small class="m-0 fw-300">
                                             <?php echo $worker['prof'] ?>
                                         </small>
                                     </h5>
@@ -131,15 +124,8 @@ $workers =
                                     <a href="<?php echo $worker['wrapbootstrap'] ?>" class="text-info fs-sm" target="_blank" title="<?php echo $worker['title'] ?>"><i class="fal fa-envelope"></i></a>
                                 </div>
                             </div>
-							<?php endforeach; ?>
-							
-							
-							
-                            
-							
-							
-							
-							
+		<?php endforeach; ?>
+						
                         </div>
                         </div>
                     </div>
